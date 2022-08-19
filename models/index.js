@@ -1,8 +1,10 @@
 const {Movie} = require('./Movie')
 const {User} = require('./User')
-
-User.belongsToMany(Movie, {through: "reviews"})
-Movie.belongsToMany(User, {through: "reviews"})
+const {Review}= require('./Review')
 
 
-module.exports = { Movie, User}
+User.belongsToMany(Movie, {through: Review})
+Movie.belongsToMany(User, {through: Review})
+
+
+module.exports = { Movie, User, Review}
