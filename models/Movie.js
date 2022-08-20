@@ -1,18 +1,18 @@
 const {db}= require('../db/db')
 const {DataTypes} = require('sequelize')
+const { Review } = require('./Review')
 
 
 let Movie = db.define('movie', {
-    id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-    },
     name: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        primaryKey: true
     },
     runtime: {
         type: DataTypes.INTEGER
+    },
+    genre: {
+        type: DataTypes.STRING
     }
 })
 

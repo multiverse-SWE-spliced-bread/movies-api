@@ -7,7 +7,9 @@ let Review = db.define('review', {
         type: DataTypes.BOOLEAN
     },
     rating: {
-        type: DataTypes.FLOAT
+        type: DataTypes.FLOAT,
+        // defaultValue: () => (Math.random()*10).toFixed(1),
+        defaultValue: 10
     }
 })
 

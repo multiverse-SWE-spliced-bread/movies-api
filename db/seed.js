@@ -1,7 +1,7 @@
 const movieList = [
-    {name:"Gladiator", runtime:155 },
-    {name:"The Big Short", runtime:125 },
-    {name:"Mean Girls", runtime: 97}
+    {name:"Gladiator", runtime:155, genre: "Historical Drama" },
+    {name:"The Big Short", runtime:125, genre:"Historical Drama"},
+    {name:"Mean Girls", runtime: 97, genre: "Comedy"}
 ]
 
 
@@ -14,3 +14,8 @@ const userList = [
 
 
 module.exports = {movieList, userList}
+
+
+
+
+

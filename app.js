@@ -6,6 +6,7 @@ const PORT = 3000
 
 buildDB()
 
+
 app.use(express.json())
 app.use('/users',usersRt)
 app.use('/movies', moviesRt)
